@@ -1,0 +1,292 @@
+
+/*impprt google fonts link */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(102, 66, 233);
+
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.conatiner {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.text-form {
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    border-radius: 10px;
+    animation: changeBg 10s linear infinite;
+
+}
+
+.image {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.image img {
+    width: 100%;
+    padding: 50px;
+}
+
+.form {
+    background-color: var(--bg-color);
+    margin-left: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+}
+
+.signin h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 55px;
+    color: #fff;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.signin i {
+    padding-left: 100px;
+    position: absolute;
+    padding-top: 25px;
+    color: var(--bg-color);
+    animation: changeig 10s linear infinite;
+
+}
+
+.signin input {
+    height: 45px;
+    width: 70%;
+    border-radius: 40px;
+    border: 2px solid var(--bg-color);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    outline: none;
+
+}
+
+.signin input::placeholder {
+    padding-left: 50px;
+}
+
+.pass {
+    text-align: center;
+    padding-top: 20px;
+    color: #dddddd6b;
+}
+
+.account-btn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.create-btn {
+    padding: 12px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid var(--bg-color);
+    font-size: 15px;
+    cursor: pointer;
+    width: 180px;
+
+}
+
+.signin-btn:hover,
+.create-btn:hover {
+    background-color: darkblue;
+    color: #fff;
+}
+
+.signin-btn {
+    padding: 12px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid var(--bg-color);
+    font-size: 15px;
+    cursor: pointer;
+    width: 180px;
+
+}
+
+.media {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.social i {
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 36px;
+    color: #fff;
+    margin-left: 10px;
+    animation: changeig 10s linear infinite;
+
+}
+
+.social i:hover {
+    color: darkblue;
+}
+
+.apps i {
+    font-size: 30px;
+    padding-left: 20px;
+    color: #fff;
+    cursor: pointer;
+    animation: changeig 10s linear infinite;
+
+}
+
+.apps i:hover {
+    color: darkblue;
+}
+
+/* Background color Change  */
+
+@keyframes changeBg {
+    0% {
+        background-color: #9c27b0;
+    }
+
+    14% {
+        background-color: #009688;
+    }
+
+    28% {
+        background-color: #2196f3;
+    }
+
+    42% {
+        background-color: #ff5722;
+    }
+
+    56% {
+        background-color: yellowgreen;
+    }
+
+    70% {
+        background-color: red;
+    }
+
+    84% {
+        background-color: #67dd13;
+    }
+
+    100% {
+        background-color: #9c27b0;
+    }
+}
+
+
+/* Icon Color Change  */
+
+
+@keyframes changeig {
+    0% {
+        color: #9c27b0;
+    }
+
+    14% {
+        color: #009688;
+    }
+
+    28% {
+        color: #2196f3;
+    }
+
+    42% {
+        color: #ff5722;
+    }
+
+    56% {
+        color: yellowgreen;
+    }
+
+    70% {
+        color: red;
+    }
+
+    84% {
+        color: #67dd13;
+    }
+
+    100% {
+        color: #9c27b0;
+    }
+}
+
+
+ 
+@media screen and (max-width: 768px) {
+    .text-form {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .image {
+        width: 50%;
+        margin-left: 200px;
+    }
+
+    .image img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .form {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .signin h1 {
+        font-size: 40px;
+    }
+
+    .signin input {
+        width: 60%;
+        margin-left: 150px;
+    }
+
+    .signin input::placeholder {
+        padding-left: 10px;
+    }
+
+    .media {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social i {
+        margin-left: 0;
+    }
+
+   
+
+}
